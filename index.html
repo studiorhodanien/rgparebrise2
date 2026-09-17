@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RG Pare-Brise — Changement & réparation pare-brise à Vienne (38)</title>
+<meta name="description" content="Changement de pare-brise, réparation d'impact, vitres teintées à Vienne et dans toute la Rhône-Alpes. Déplacement à domicile, toutes assurances acceptées.">
+<link rel="icon" type="image/png" href="assets/logo-noir.png">
+<link rel="apple-touch-icon" href="assets/logo-noir.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noir: #0B0B0C;
+    --noir-2: #17171A;
+    --rouge: #C8102E;
+    --rouge-dark: #8F0B21;
+    --blanc: #FFFFFF;
+    --gris-clair: #F3F2F0;
+    --gris-ligne: #E4E2DE;
+    --texte-doux: #6B6A68;
+    --radius: 2px;
+    --maxw: 1180px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--noir);
+    background:var(--blanc);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.eyebrow,.stat-num{
+    font-family:'Barlow Condensed', sans-serif;
+    letter-spacing:0.01em;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .eyebrow{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--rouge);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:26px;height:2px;
+    background:var(--rouge);
+    display:inline-block;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:15px 28px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:17px;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    border-radius:var(--radius);
+    border:2px solid transparent;
+    cursor:pointer;
+    transition:transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+    white-space:nowrap;
+  }
+  .btn:active{transform:scale(0.97);}
+  .btn-rouge{background:var(--rouge); color:var(--blanc);}
+  .btn-rouge:hover{background:var(--rouge-dark);}
+  .btn-outline-blanc{border-color:rgba(255,255,255,0.5); color:var(--blanc);}
+  .btn-outline-blanc:hover{border-color:var(--blanc); background:rgba(255,255,255,0.08);}
+  .btn-outline-noir{border-color:var(--noir); color:var(--noir);}
+  .btn-outline-noir:hover{background:var(--noir); color:var(--blanc);}
+
+  /* --- image placeholder utility ---
+     Remplacer par une vraie <img src="assets/xxx.jpg" alt="..."> ou par
+     background-image: url(...) sur ce même bloc. Le pictogramme et le
+     texte disparaissent automatiquement dès qu'une image de fond est posée. */
+  .img-slot{
+    position:relative;
+    background:
+      linear-gradient(135deg, rgba(255,255,255,0.05) 25%, transparent 25%) 0 0/16px 16px,
+      linear-gradient(135deg, transparent 75%, rgba(255,255,255,0.05) 75%) 0 0/16px 16px,
+      var(--noir-2);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    color:rgba(255,255,255,0.55);
+  }
+  .img-slot__label{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:14px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    text-align:center;
+    padding:10px 16px;
+    border:1px dashed rgba(255,255,255,0.3);
+  }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--noir);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:92px;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    color:var(--blanc);
+  }
+  .logo-img{
+    height:64px;
+    width:auto;
+  }
+  .logo-sub{
+    font-size:10px;
+    line-height:1.5;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,0.45);
+    padding-left:14px;
+    border-left:1px solid rgba(255,255,255,0.18);
+  }
+  @media (max-width:600px){
+    .header-inner{height:76px;}
+    .logo-img{height:50px;}
+    .logo-sub{display:none;}
+  }
+  nav ul{display:flex; gap:32px;}
+  nav a{
+    font-size:14px; font-weight:600;
+    color:rgba(255,255,255,0.82);
+    transition:color .2s;
+  }
+  nav a:hover{color:var(--blanc);}
+  .header-actions{display:flex; align-items:center; gap:18px;}
+  .tel-link{
+    display:flex; align-items:center; gap:8px;
+    color:var(--blanc); font-weight:700; font-size:15px;
+    font-family:'Barlow Condensed', sans-serif;
+    letter-spacing:0.02em;
+  }
+  .nav-toggle{display:none;}
+
+  @media (max-width:900px){
+    nav{display:none;}
+    .header-actions .btn{display:none;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:640px;
+    display:flex;
+    align-items:center;
+    background:var(--noir);
+    overflow:hidden;
+  }
+  .hero::after{
+    /* effet impact / éclat de pare-brise, discret, en fond */
+    content:"";
+    position:absolute; inset:0;
+    background:
+      radial-gradient(circle at 82% 30%, rgba(200,16,46,0.16), transparent 45%),
+      repeating-linear-gradient(115deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 90px);
+    pointer-events:none;
+  }
+  .hero-grid{
+    position:relative; z-index:2;
+    display:grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap:56px;
+    align-items:center;
+    width:100%;
+    padding:64px 0;
+  }
+  .hero-eyebrow{color:var(--rouge); margin-bottom:18px;}
+  .hero h1{
+    color:var(--blanc);
+    font-size:clamp(40px, 5vw, 64px);
+    font-weight:800;
+    line-height:0.98;
+    text-transform:uppercase;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--rouge);
+  }
+  .hero p.lead{
+    margin-top:22px;
+    color:rgba(255,255,255,0.72);
+    font-size:18px;
+    max-width:480px;
+  }
+  .hero-actions{
+    margin-top:34px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .hero-trust{
+    margin-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px 32px;
+  }
+  .hero-trust li{
+    display:flex; align-items:center; gap:10px;
+    color:rgba(255,255,255,0.78);
+    font-size:14px; font-weight:500;
+  }
+  .hero-trust li .dot{
+    width:7px;height:7px;background:var(--rouge); flex:none;
+    clip-path:polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+  .hero-visual{
+    position:relative;
+    aspect-ratio: 4/5;
+    border-radius:var(--radius);
+  }
+  .hero-visual .img-slot{width:100%; height:100%; border-radius:var(--radius);}
+  .hero-badge{
+    position:absolute;
+    bottom:-22px; left:-22px;
+    background:var(--rouge);
+    color:var(--blanc);
+    padding:18px 22px;
+    max-width:220px;
+    z-index:3;
+  }
+  .hero-badge .stat-num{font-size:34px; font-weight:800; line-height:1;}
+  .hero-badge .stat-label{font-size:12px; letter-spacing:0.04em; margin-top:4px; text-transform:uppercase; font-weight:600;}
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr; padding:44px 0 80px;}
+    .hero-visual{order:-1; aspect-ratio:16/10;}
+    .hero-badge{left:16px; bottom:-18px;}
+  }
+
+  /* ---------- BANDEAU CONFIANCE ---------- */
+  .bandeau{
+    background:var(--rouge);
+    color:var(--blanc);
+  }
+  .bandeau-inner{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    text-align:center;
+  }
+  .bandeau-item{
+    padding:20px 14px;
+    border-right:1px solid rgba(255,255,255,0.22);
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:600;
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:0.02em;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+  }
+  .bandeau-item:last-child{border-right:none;}
+  @media (max-width:760px){
+    .bandeau-inner{grid-template-columns:repeat(2,1fr);}
+    .bandeau-item:nth-child(2){border-right:none;}
+    .bandeau-item{border-bottom:1px solid rgba(255,255,255,0.22);}
+  }
+
+  /* ---------- SECTION GÉNÉRIQUE ---------- */
+  section{padding:100px 0;}
+  .section-head{
+    max-width:640px;
+    margin-bottom:56px;
+  }
+  .section-head h2{
+    font-size:clamp(32px,4vw,46px);
+    font-weight:800;
+    text-transform:uppercase;
+    margin-top:14px;
+    line-height:1.02;
+  }
+  .section-head p{
+    margin-top:16px;
+    color:var(--texte-doux);
+    font-size:16.5px;
+  }
+  .section-head.center{margin-left:auto; margin-right:auto; text-align:center;}
+  .section-head.center .eyebrow{justify-content:center;}
+  .section-head.center .eyebrow::before{display:none;}
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:2px;
+    background:var(--gris-ligne);
+  }
+  .service-card{
+    background:var(--blanc);
+    display:flex;
+    flex-direction:column;
+  }
+  .service-card .img-slot{aspect-ratio:4/3;}
+  .service-img{
+    width:100%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+    display:block;
+  }
+  .service-body{padding:30px 28px 34px;}
+  .service-num{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:13px; font-weight:700; color:var(--rouge);
+    letter-spacing:0.1em;
+  }
+  .service-body h3{
+    margin-top:10px;
+    font-size:24px; font-weight:700; text-transform:uppercase;
+  }
+  .service-body p{
+    margin-top:10px; color:var(--texte-doux); font-size:15px;
+  }
+  .service-link{
+    margin-top:18px;
+    display:inline-flex; align-items:center; gap:6px;
+    font-weight:700; font-size:14px; color:var(--noir);
+    border-bottom:2px solid var(--rouge);
+    padding-bottom:2px;
+    width:fit-content;
+  }
+  @media (max-width:900px){
+    .services-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- STATISTIQUES ---------- */
+  .stats{
+    padding-top:0;
+    background:var(--blanc);
+  }
+  .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:0;
+    border-top:1px solid var(--gris-ligne);
+    border-bottom:1px solid var(--gris-ligne);
+  }
+  .stat{
+    padding:44px 34px;
+    border-right:1px solid var(--gris-ligne);
+    text-align:center;
+  }
+  .stat:last-child{border-right:none;}
+  .stat-value{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:800;
+    font-size:clamp(56px, 7vw, 84px);
+    line-height:1;
+    color:var(--rouge);
+    display:flex;
+    align-items:baseline;
+    justify-content:center;
+    gap:6px;
+    font-variant-numeric:tabular-nums;
+  }
+  .stat-unit{
+    font-size:clamp(22px, 2.6vw, 32px);
+    font-weight:700;
+    color:var(--noir);
+  }
+  .stat h3{
+    margin-top:12px;
+    font-size:19px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.02em;
+  }
+  .stat p{
+    margin-top:10px;
+    font-size:14.5px;
+    color:var(--texte-doux);
+    max-width:300px;
+    margin-left:auto; margin-right:auto;
+  }
+  @media (max-width:860px){
+    .stats-grid{grid-template-columns:1fr;}
+    .stat{border-right:none; border-bottom:1px solid var(--gris-ligne); padding:36px 24px;}
+    .stat:last-child{border-bottom:none;}
+  }
+
+  /* ---------- AUTRES PRESTATIONS ---------- */
+  .autres{
+    background:var(--gris-clair);
+  }
+  .autres-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+  }
+  .autres-visual .img-slot{aspect-ratio:5/4;}
+  .autres-img{
+    width:100%;
+    aspect-ratio:5/4;
+    object-fit:cover;
+    display:block;
+    border-radius:var(--radius);
+  }
+  .autres-list{display:flex; flex-direction:column; gap:0;}
+  .autres-list li{
+    display:flex; align-items:baseline; gap:16px;
+    padding:18px 0;
+    border-bottom:1px solid var(--gris-ligne);
+    font-size:16px; font-weight:500;
+  }
+  .autres-list li:first-child{padding-top:0;}
+  .autres-list .tick{
+    flex:none;
+    width:22px;height:22px;
+    background:var(--noir);
+    color:var(--blanc);
+    display:flex; align-items:center; justify-content:center;
+    font-size:12px; font-weight:800;
+    border-radius:50%;
+  }
+  @media (max-width:860px){
+    .autres-grid{grid-template-columns:1fr; gap:36px;}
+    .autres-visual{order:-1;}
+  }
+
+  /* ---------- ZONE INTERVENTION ---------- */
+  .zone{
+    background:var(--noir);
+    color:var(--blanc);
+    position:relative;
+    overflow:hidden;
+  }
+  .zone::after{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(circle at 12% 80%, rgba(200,16,46,0.14), transparent 50%);
+    pointer-events:none;
+  }
+  .zone-inner{
+    position:relative; z-index:2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+  }
+  .zone h2{
+    font-size:clamp(30px,4vw,44px);
+    font-weight:800; text-transform:uppercase; line-height:1.02;
+  }
+  .zone p{margin-top:18px; color:rgba(255,255,255,0.68); font-size:16.5px; max-width:460px;}
+  .zone-chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:26px;}
+  .zone-chips span{
+    border:1px solid rgba(255,255,255,0.25);
+    padding:7px 14px;
+    font-size:13px; font-weight:600;
+    border-radius:100px;
+    color:rgba(255,255,255,0.85);
+  }
+  .zone-map{display:flex; justify-content:center;}
+  .ra-map{
+    width:100%;
+    max-width:520px;
+    height:auto;
+    overflow:visible;
+  }
+  .ra-shape{
+    stroke-dasharray:2600;
+    stroke-dashoffset:2600;
+    transition:stroke-dashoffset 1.6s cubic-bezier(.22,.61,.36,1);
+  }
+  .zone-map.is-visible .ra-shape{stroke-dashoffset:0;}
+
+  .ra-dot{
+    opacity:0;
+    transform:scale(0.2);
+    transform-origin:center;
+    transform-box:fill-box;
+    transition:opacity .45s ease, transform .45s cubic-bezier(.34,1.56,.64,1);
+  }
+  .ra-dot--minor{fill:rgba(255,255,255,0.55);}
+  .ra-dot--major{fill:var(--blanc);}
+  .ra-dot--base{fill:var(--rouge); stroke:var(--blanc); stroke-width:2;}
+  .zone-map.is-visible .ra-dot{
+    opacity:1;
+    transform:scale(1);
+    transition-delay:calc(0.5s + var(--i) * 0.09s);
+  }
+
+  .ra-pulse{
+    fill:var(--rouge);
+    opacity:0;
+    transform-origin:center;
+    transform-box:fill-box;
+  }
+  .zone-map.is-visible .ra-pulse{
+    animation:raPulse 2.4s ease-out 1.3s infinite;
+  }
+  @keyframes raPulse{
+    0%   {opacity:0.55; transform:scale(1);}
+    70%  {opacity:0;    transform:scale(3.4);}
+    100% {opacity:0;    transform:scale(3.4);}
+  }
+
+  .ra-label{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:0.06em;
+    fill:rgba(255,255,255,0.7);
+    opacity:0;
+    transition:opacity .5s ease;
+  }
+  .ra-label--base{
+    fill:var(--rouge);
+    font-weight:800;
+    font-size:17px;
+    letter-spacing:0.1em;
+  }
+  .zone-map.is-visible .ra-label{
+    opacity:1;
+    transition-delay:calc(0.75s + var(--i) * 0.09s);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .ra-shape{stroke-dashoffset:0; transition:none;}
+    .ra-dot,.ra-label{opacity:1; transform:none; transition:none;}
+    .zone-map.is-visible .ra-pulse{animation:none;}
+  }
+  @media (max-width:860px){
+    .zone-inner{grid-template-columns:1fr;}
+    .zone-map{order:-1;}
+  }
+
+  /* ---------- AVIS ---------- */
+  .avis{
+    text-align:center;
+  }
+  .avis-box{
+    max-width:640px; margin:0 auto;
+    background:var(--gris-clair);
+    padding:56px 44px;
+    border-top:4px solid var(--rouge);
+  }
+  .avis-box .quote-mark{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:64px; color:var(--rouge); line-height:1; font-weight:800;
+  }
+  .avis-box p.msg{
+    font-size:19px; margin-top:6px; color:var(--noir); font-weight:500;
+    max-width:480px; margin-left:auto; margin-right:auto;
+  }
+  .avis-box .btn{margin-top:30px;}
+
+  /* ---------- CTA FINAL ---------- */
+  .cta-final{
+    background:var(--rouge);
+    color:var(--blanc);
+    text-align:center;
+  }
+  .cta-final h2{
+    font-size:clamp(30px,4.4vw,50px);
+    font-weight:800; text-transform:uppercase; line-height:1.02;
+  }
+  .cta-final p{margin-top:14px; font-size:17px; color:rgba(255,255,255,0.9);}
+  .cta-final .hero-actions{justify-content:center; margin-top:30px;}
+  .cta-final .btn-rouge{background:var(--noir);}
+  .cta-final .btn-rouge:hover{background:#000;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--noir-2);
+    color:rgba(255,255,255,0.72);
+    padding:70px 0 30px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr 1fr;
+    gap:40px;
+    padding-bottom:50px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+  }
+  .footer-grid h4{
+    color:var(--blanc);
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:15px; letter-spacing:0.06em;
+    text-transform:uppercase; margin-bottom:18px;
+  }
+  .footer-logo{
+    height:88px; width:auto; margin-bottom:18px; opacity:0.95;
+  }
+  .footer-grid p{font-size:14px; line-height:1.7;}
+  .footer-grid ul li{font-size:14px; margin-bottom:10px;}
+  .footer-grid ul li a:hover{color:var(--blanc);}
+  .footer-map{
+    margin-top:16px;
+    aspect-ratio:4/3;
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:var(--radius);
+    overflow:hidden;
+    background:var(--noir);
+  }
+  .footer-map iframe{
+    width:100%; height:100%; border:0; display:block;
+    filter:grayscale(1) invert(0.92) contrast(0.9);
+  }
+  .footer-map-link{
+    display:inline-block;
+    margin-top:12px;
+    font-size:13px; font-weight:700;
+    color:var(--blanc);
+    border-bottom:2px solid var(--rouge);
+    padding-bottom:2px;
+  }
+  .footer-bottom{
+    display:flex; justify-content:space-between; align-items:center;
+    padding-top:26px;
+    font-size:13px; color:rgba(255,255,255,0.4);
+    flex-wrap:wrap; gap:10px;
+  }
+  @media (max-width:860px){
+    .footer-grid{grid-template-columns:1fr 1fr; row-gap:36px;}
+  }
+
+  /* ---------- BOUTON FLOTTANT MOBILE ---------- */
+  .mobile-call{
+    display:none;
+    position:fixed;
+    bottom:0; left:0; right:0;
+    z-index:60;
+    background:var(--noir);
+    padding:14px 20px;
+    border-top:1px solid rgba(255,255,255,0.1);
+  }
+  .mobile-call a{
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    background:var(--rouge); color:var(--blanc);
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700; font-size:17px; text-transform:uppercase;
+    padding:13px; border-radius:var(--radius);
+  }
+  @media (max-width:600px){
+    .mobile-call{display:block;}
+    body{padding-bottom:70px;}
+  }
+
+  /* reveal on scroll */
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.is-visible{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1; transform:none; transition:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap header-inner">
+    <a href="#top" class="logo" aria-label="RG Pare-Brise — accueil">
+      <img src="assets/logo-blanc.png" alt="RG Pare-Brise" class="logo-img">
+      <span class="logo-sub">Vienne<br>Rhône-Alpes</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#services">Prestations</a></li>
+        <li><a href="#zone">Zone d'intervention</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="tel-link" href="tel:+33623536186">
+        06 23 53 61 86
+      </a>
+      <a class="btn btn-rouge" href="#" onclick="openEmailChooser(event)">Devis gratuit</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" style="padding:0;">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow hero-eyebrow">Pare-brise · Vitrage auto</p>
+      <h1>Votre pare-brise <em>changé chez vous</em></h1>
+      <p class="lead">Changement de pare-brise, réparation d'impact et vitres teintées à Vienne (38) et dans toute la Rhône-Alpes. On se déplace directement devant chez vous ou sur votre lieu de travail.</p>
+      <p style="margin-top:14px;color:#fff;font-weight:800;font-size:19px;">🎁 Franchise offerte + <span style="color:var(--rouge);">jusqu'à 300 € offerts</span> pour tout changement de pare-brise*</p>
+      <div class="hero-actions">
+        <a class="btn btn-rouge" href="tel:+33623536186">Appeler maintenant</a>
+        <a class="btn btn-outline-blanc" href="#contact">Demander un devis</a>
+      </div>
+      <ul class="hero-trust">
+        <li><span class="dot"></span>Toutes assurances acceptées</li>
+        <li><span class="dot"></span>8h – 19h, du lundi au samedi</li>
+        <li><span class="dot"></span>Déplacement à domicile en Rhône-Alpes</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/hero.jpg" alt="Technicien RG Pare-Brise en intervention sur un véhicule" loading="eager" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);">
+      <div class="hero-badge">
+        <div class="stat-num">jusqu'à 300 €</div>
+        <div class="stat-label">OFFERTS pour tout changement de pare-brise</div>
+        <div style="margin-top:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;">Franchise offerte*</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BANDEAU CONFIANCE ================= -->
+<div class="bandeau">
+  <div class="wrap bandeau-inner">
+    <div class="bandeau-item">Franchise offerte*</div>
+    <div class="bandeau-item">jusqu'à 300 € offerts*</div>
+    <div class="bandeau-item">Déplacement à domicile</div>
+    <div class="bandeau-item">Devis gratuit</div>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Nos prestations</p>
+      <h2>Trois expertises, une seule équipe</h2>
+      <p>Du simple impact à remplacer avant qu'il ne se propage, jusqu'au changement complet du pare-brise ou à la pose de vitres teintées, tout est fait sur place, avec du matériel professionnel.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <img class="service-img" src="assets/changement.jpg" alt="Changement de pare-brise en atelier" loading="lazy">
+        <div class="service-body">
+          <p class="service-num">01</p>
+          <h3>Changement de pare-brise</h3>
+          <p>Remplacement toutes marques, avec vitrage aux normes constructeur et recalibrage des aides à la conduite si votre véhicule en est équipé.</p>
+          <a class="service-link" href="#contact">Demander un devis →</a>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <img class="service-img" src="assets/reparation.jpg" alt="Réparation d'impact sur pare-brise" loading="lazy">
+        <div class="service-body">
+          <p class="service-num">02</p>
+          <h3>Réparation d'impact</h3>
+          <p>Un impact traité à temps évite le remplacement complet. Résine injectée en 30 minutes, intervention souvent prise en charge à 100% par votre assurance.</p>
+          <a class="service-link" href="#contact">Demander un devis →</a>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <img class="service-img" src="assets/teintees.jpg" alt="Pose de vitres teintées sur véhicule" loading="lazy">
+        <div class="service-body">
+          <p class="service-num">03</p>
+          <h3>Vitres teintées</h3>
+          <p>Film de teinte posé dans le respect de la réglementation, pour plus de confort, d'intimité et de protection contre la chaleur et les UV.</p>
+          <a class="service-link" href="#contact">Demander un devis →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATISTIQUES ================= -->
+<section class="stats">
+  <div class="wrap">
+    <div class="section-head center reveal" style="margin-bottom:48px;">
+      <p class="eyebrow">Le bris de glace en chiffres</p>
+      <h2>Un sinistre bien plus courant qu'on ne le croit</h2>
+    </div>
+
+    <div class="stats-grid" id="stats-grid">
+      <div class="stat reveal">
+        <div class="stat-value"><span class="counter" data-target="37" data-suffix="">0</span><span class="stat-unit">%</span></div>
+        <h3>des déclarations d'assurance</h3>
+        <p>Les sinistres bris de glace pèsent pour près de 37 % des déclarations enregistrées par les assureurs.</p>
+      </div>
+
+      <div class="stat reveal">
+        <div class="stat-value"><span class="counter" data-target="3">0</span><span class="stat-unit">ans</span></div>
+        <h3>entre deux pare-brise</h3>
+        <p>En moyenne, un automobiliste français change son pare-brise tous les 3 ans.</p>
+      </div>
+
+      <div class="stat reveal">
+        <div class="stat-value"><span class="counter" data-target="81">0</span><span class="stat-unit">%</span></div>
+        <h3>des bris de glace déclarés</h3>
+        <p>Le pare-brise capte à lui seul 81 % des sinistres bris de glace déclarés.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AUTRES PRESTATIONS ================= -->
+<section class="autres">
+  <div class="wrap autres-grid">
+    <div class="autres-visual reveal">
+      <img class="autres-img" src="assets/rg-pare-brise-utilitaire.png" alt="Véhicule utilitaire RG Pare-Brise en intervention" loading="lazy">
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Et bien plus encore</p>
+      <h2 style="font-size:clamp(28px,3.6vw,40px); font-weight:800; text-transform:uppercase; margin-top:14px;">Toutes vos vitres, un seul interlocuteur</h2>
+      <p style="margin-top:14px; color:var(--texte-doux); font-size:16px;">Au-delà du pare-brise, on prend en charge l'ensemble du vitrage de votre véhicule.</p>
+      <ul class="autres-list" style="margin-top:26px;">
+        <li><span class="tick">✓</span>Lunette arrière</li>
+        <li><span class="tick">✓</span>Vitres latérales avant et arrière</li>
+        <li><span class="tick">✓</span>Rétroviseurs et joints de vitrage</li>
+        <li><span class="tick">✓</span>Recalibrage caméras / capteurs après pose</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ZONE D'INTERVENTION ================= -->
+<section class="zone" id="zone">
+  <div class="wrap zone-inner">
+    <div class="reveal">
+      <p class="eyebrow" style="color:var(--rouge);">Zone d'intervention</p>
+      <h2>On vient à vous, partout en Rhône-Alpes</h2>
+      <p>Basés à Vienne (38), on se déplace directement chez vous, sur votre lieu de travail ou où qu'il vous arrange, dans toute la région.</p>
+      <div class="zone-chips">
+        <span>Vienne</span>
+        <span>Lyon</span>
+        <span>Bourgoin-Jallieu</span>
+        <span>Grenoble</span>
+        <span>Valence</span>
+        <span>+ toute la Rhône-Alpes</span>
+      </div>
+      <div class="hero-actions" style="margin-top:32px;">
+        <a class="btn btn-rouge" href="tel:+33623536186">Vérifier ma zone</a>
+      </div>
+    </div>
+    <div class="zone-map reveal">
+      <svg class="ra-map" viewBox="0 0 560 560" role="img" aria-label="Carte de la région Rhône-Alpes avec les principales villes desservies">
+        <defs>
+          <linearGradient id="raFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(255,255,255,0.07)"/>
+            <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+          </linearGradient>
+        </defs>
+
+        <!-- contour de la région -->
+        <path class="ra-shape" d="M 48.8 102.9 L 99.2 71.3 L 151.0 71.3 L 185.1 96.6 L 191.1 39.7 L 240.0 29.2 L 284.4 46.0 L 324.5 75.5 L 358.6 75.5 L 380.8 46.0 L 417.9 50.2 L 454.9 39.7 L 487.5 50.2 L 484.6 113.5 L 521.6 149.3 L 499.4 170.4 L 532.0 240.0 L 514.2 277.9 L 477.2 303.2 L 428.2 366.4 L 410.4 404.4 L 358.6 440.2 L 328.9 450.7 L 280.0 467.6 L 232.6 488.7 L 195.5 497.1 L 176.2 530.8 L 158.4 524.5 L 131.8 488.7 L 84.3 492.9 L 66.5 440.2 L 76.9 398.0 L 54.7 362.2 L 76.9 313.7 L 51.7 271.6 L 28.0 229.4 L 42.8 180.9 L 28.0 145.1 L 48.8 102.9 Z"
+              fill="url(#raFill)" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"
+              stroke-linejoin="round"/>
+
+        <!-- villes secondaires -->
+        <g class="ra-dots">
+          <circle class="ra-dot ra-dot--minor" style="--i:9"  cx="251.5" cy="91.4"  r="3.5"/>
+          <circle class="ra-dot ra-dot--minor" style="--i:10" cx="79.6"  cy="126.8" r="3.5"/>
+          <circle class="ra-dot ra-dot--minor" style="--i:11" cx="258.4" cy="221.8" r="3.5"/>
+          <circle class="ra-dot ra-dot--minor" style="--i:12" cx="180.7" cy="438.9" r="3.5"/>
+          <circle class="ra-dot ra-dot--minor" style="--i:13" cx="158.3" cy="401.2" r="3.5"/>
+          <circle class="ra-dot ra-dot--minor" style="--i:14" cx="437.0" cy="56.4"  r="3.5"/>
+          <circle class="ra-dot ra-dot--minor" style="--i:15" cx="424.1" cy="202.9" r="3.5"/>
+          <circle class="ra-dot ra-dot--minor" style="--i:16" cx="225.2" cy="335.9" r="3.5"/>
+          <circle class="ra-dot ra-dot--minor" style="--i:17" cx="315.0" cy="80.2"  r="3.5"/>
+
+          <!-- grandes villes -->
+          <circle class="ra-dot ra-dot--major" style="--i:2" cx="193.4" cy="184.3" r="5.5"/>
+          <circle class="ra-dot ra-dot--major" style="--i:3" cx="325.1" cy="305.7" r="5.5"/>
+          <circle class="ra-dot ra-dot--major" style="--i:4" cx="126.9" cy="252.6" r="5.5"/>
+          <circle class="ra-dot ra-dot--major" style="--i:5" cx="201.7" cy="359.5" r="5.5"/>
+          <circle class="ra-dot ra-dot--major" style="--i:6" cx="353.7" cy="226.5" r="5.5"/>
+          <circle class="ra-dot ra-dot--major" style="--i:7" cx="385.1" cy="155.9" r="5.5"/>
+
+          <!-- Vienne : base de l'entreprise -->
+          <circle class="ra-pulse" cx="199.1" cy="234.7" r="7"/>
+          <circle class="ra-dot ra-dot--base" style="--i:1" cx="199.1" cy="234.7" r="7"/>
+        </g>
+
+        <!-- labels -->
+        <g class="ra-labels">
+          <text class="ra-label" style="--i:2" x="182"  y="177" text-anchor="end">Lyon</text>
+          <text class="ra-label" style="--i:3" x="336"  y="311">Grenoble</text>
+          <text class="ra-label" style="--i:4" x="116"  y="246" text-anchor="end">Saint-Étienne</text>
+          <text class="ra-label" style="--i:5" x="191"  y="368" text-anchor="end">Valence</text>
+          <text class="ra-label" style="--i:6" x="364"  y="222">Chambéry</text>
+          <text class="ra-label" style="--i:7" x="396"  y="151">Annecy</text>
+          <text class="ra-label ra-label--base" style="--i:1" x="210" y="255">VIENNE</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AVIS ================= -->
+<section class="avis" id="avis">
+  <div class="wrap">
+    <div class="section-head center reveal" style="margin-bottom:36px;">
+      <p class="eyebrow">Avis clients</p>
+      <h2>La confiance se construit pare-brise après pare-brise</h2>
+    </div>
+    <div class="avis-box reveal">
+      <div class="quote-mark">"</div>
+      <p class="msg">Votre avis compte pour nous. Si vous êtes satisfait de notre intervention, laissez-nous un avis sur Google — ça prend une minute et ça nous aide énormément.</p>
+      <!-- Lien "laisser un avis" Google. Si un jour il ne fonctionne plus, le remplacer par
+           le lien court fourni dans la fiche Google Business (Demander des avis → https://g.page/r/.../review) -->
+      <a class="btn btn-rouge" href="https://www.google.com/search?q=rg+pare+brise&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_6b965tCVMyaoAs_ucPhFxqHjqoC4lHMkadE6jGDXmkS70u7mE3A1vKl2zWOVPULAWhUjR4%3D&uds=AJ5uw1-4w3rW8QLAeBTvAuCjnp-gyk_A1T6cTO3aAmaRwg3VxoZg4huKtk5F4VLZtvfQW1xT8BQRSkf8ClSgiZqHWN4TqMxePAGfxfDPrUKZozuRMZfP4Ls" target="_blank" rel="noopener">Laisser un avis Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Un impact, une fissure, un pare-brise à changer ?</h2>
+    <p>Appelez maintenant, on s'occupe du reste — devis gratuit et prise en charge assurance.</p>
+    <div class="hero-actions">
+      <a class="btn btn-rouge" href="tel:+33623536186">06 23 53 61 86</a>
+      <a class="btn btn-outline-blanc" href="mailto:Rgparebrise.contact@gmail.com">Écrire un e-mail</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER / CONTACT ================= -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo-blanc.png" alt="RG Pare-Brise" class="footer-logo">
+        <p>Changement de pare-brise, réparation d'impact et vitres teintées à Vienne et dans toute la Rhône-Alpes. Déplacement à domicile, toutes assurances acceptées.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33623536186">06 23 53 61 86</a></li>
+          <li><a href="mailto:Rgparebrise.contact@gmail.com">Rgparebrise.contact@gmail.com</a></li>
+          <li>11 quai Claude Bernard<br>38200 Vienne</li>
+        </ul>
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=11+quai+Claude+Bernard,+38200+Vienne,+France&z=15&output=embed"
+            title="Localisation de RG Pare-Brise, 11 quai Claude Bernard à Vienne"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+        <a class="footer-map-link" href="https://www.google.com/maps/dir/?api=1&destination=11+quai+Claude+Bernard,+38200+Vienne,+France" target="_blank" rel="noopener">Ouvrir l'itinéraire →</a>
+      </div>
+      <div>
+        <h4>Horaires</h4>
+        <ul>
+          <li>Lundi – Samedi</li>
+          <li>8h00 – 19h00</li>
+          <li>Dimanche : fermé</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Prestations</h4>
+        <ul>
+          <li><a href="#services">Changement de pare-brise</a></li>
+          <li><a href="#services">Réparation d'impact</a></li>
+          <li><a href="#services">Vitres teintées</a></li>
+          <li><a href="#zone">Toutes vitres du véhicule</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> RG Pare-Brise — Vienne (38)</span>
+      <span>Site conçu par Studio Rhôdanien</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= CHOIX DE LA MESSAGERIE ================= -->
+<div class="email-chooser" id="emailChooser" aria-hidden="true">
+  <div class="email-chooser__backdrop" onclick="closeEmailChooser()"></div>
+  <div class="email-chooser__box" role="dialog" aria-modal="true" aria-labelledby="emailChooserTitle">
+    <button class="email-chooser__close" type="button" onclick="closeEmailChooser()" aria-label="Fermer">×</button>
+    <p class="eyebrow">Demande de devis</p>
+    <h2 id="emailChooserTitle">Choisissez votre messagerie</h2>
+    <p>Vous pouvez utiliser Gmail, Outlook, Orange, SFR ou votre messagerie habituelle.</p>
+    <div class="email-chooser__grid">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Rgparebrise.contact@gmail.com&su=Demande%20de%20devis%20gratuit%20%E2%80%93%20RG%20Pare-Brise&body=Bonjour%2C%0A%0AJe%20souhaite%20obtenir%20un%20devis%20gratuit%20pour%20mon%20v%C3%A9hicule.%0A%0ANom%20%3A%0AT%C3%A9l%C3%A9phone%20%3A%0AV%C3%A9hicule%20%3A%0AImmatriculation%20%3A%0APrestation%20souhait%C3%A9e%20%3A%0A%0AMerci." target="_blank" rel="noopener">Gmail</a>
+      <a href="https://outlook.live.com/mail/0/deeplink/compose?to=Rgparebrise.contact@gmail.com&subject=Demande%20de%20devis%20gratuit%20%E2%80%93%20RG%20Pare-Brise&body=Bonjour%2C%0A%0AJe%20souhaite%20obtenir%20un%20devis%20gratuit%20pour%20mon%20v%C3%A9hicule.%0A%0ANom%20%3A%0AT%C3%A9l%C3%A9phone%20%3A%0AV%C3%A9hicule%20%3A%0AImmatriculation%20%3A%0APrestation%20souhait%C3%A9e%20%3A%0A%0AMerci." target="_blank" rel="noopener">Outlook</a>
+      <a href="https://mail.orange.fr/" target="_blank" rel="noopener">Orange Mail</a>
+      <a href="https://webmail.sfr.fr/" target="_blank" rel="noopener">SFR Mail</a>
+      <a href="https://mail.yahoo.com/" target="_blank" rel="noopener">Yahoo Mail</a>
+      <a href="https://www.icloud.com/mail/" target="_blank" rel="noopener">iCloud Mail</a>
+      <a class="email-chooser__other" href="mailto:Rgparebrise.contact@gmail.com?subject=Demande%20de%20devis%20gratuit%20%E2%80%93%20RG%20Pare-Brise&body=Bonjour%2C%0A%0AJe%20souhaite%20obtenir%20un%20devis%20gratuit%20pour%20mon%20v%C3%A9hicule.%0A%0ANom%20%3A%0AT%C3%A9l%C3%A9phone%20%3A%0AV%C3%A9hicule%20%3A%0AImmatriculation%20%3A%0APrestation%20souhait%C3%A9e%20%3A%0A%0AMerci.">Autre messagerie / application</a>
+    </div>
+  </div>
+</div>
+
+<style>
+.email-chooser{display:none;position:fixed;inset:0;z-index:100;align-items:center;justify-content:center;padding:24px}
+.email-chooser.is-open{display:flex}
+.email-chooser__backdrop{position:absolute;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(4px)}
+.email-chooser__box{position:relative;z-index:1;width:min(620px,100%);background:#fff;padding:38px;border-top:4px solid var(--rouge);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+.email-chooser__box h2{font-family:'Barlow Condensed',sans-serif;font-size:38px;line-height:1;text-transform:uppercase;margin-top:12px}
+.email-chooser__box>p:not(.eyebrow){color:var(--texte-doux);margin-top:12px}
+.email-chooser__close{position:absolute;right:14px;top:8px;border:0;background:none;font-size:34px;line-height:1;cursor:pointer;color:var(--noir)}
+.email-chooser__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:26px}
+.email-chooser__grid a{display:flex;align-items:center;justify-content:center;min-height:52px;padding:12px 16px;background:var(--noir);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;border:2px solid var(--noir);transition:.2s}
+.email-chooser__grid a:hover{background:var(--rouge);border-color:var(--rouge)}
+.email-chooser__grid .email-chooser__other{grid-column:1/-1;background:#fff;color:var(--noir);border-color:var(--noir)}
+.email-chooser__grid .email-chooser__other:hover{background:var(--noir);color:#fff}
+@media(max-width:600px){.email-chooser__box{padding:32px 22px}.email-chooser__grid{grid-template-columns:1fr}.email-chooser__grid .email-chooser__other{grid-column:auto}}
+</style>
+
+<!-- ================= BOUTON FLOTTANT MOBILE ================= -->
+<div class="mobile-call">
+  <a href="tel:+33623536186">📞 Appeler maintenant</a>
+</div>
+
+<script>
+  function openEmailChooser(e){
+    if(e) e.preventDefault();
+    const chooser = document.getElementById('emailChooser');
+    chooser.classList.add('is-open');
+    chooser.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
+  function closeEmailChooser(){
+    const chooser = document.getElementById('emailChooser');
+    chooser.classList.remove('is-open');
+    chooser.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeEmailChooser(); });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Reveal au scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Compteurs chiffrés (0 → valeur cible)
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function runCounter(el){
+    const target = parseInt(el.dataset.target, 10);
+    if (prefersReduced) { el.textContent = target; return; }
+    const duration = 1600;
+    const start = performance.now();
+    function frame(now){
+      const p = Math.min((now - start) / duration, 1);
+      // easeOutExpo : démarre vite, finit en douceur
+      const eased = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
+      el.textContent = Math.round(eased * target);
+      if (p < 1) requestAnimationFrame(frame);
+      else el.textContent = target;
+    }
+    requestAnimationFrame(frame);
+  }
+
+  const counterIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        runCounter(entry.target);
+        counterIO.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('.counter').forEach(el => counterIO.observe(el));
+</script>
+
+</body>
+</html>
